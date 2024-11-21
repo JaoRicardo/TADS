@@ -1,6 +1,3 @@
-package Aulas;
-
-import java.util.Scanner;
 
 public class ContaBancaria {
 	private String numero;
