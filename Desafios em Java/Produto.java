@@ -15,6 +15,9 @@ public class Produto{
             this.preco = preco;  
         }
     }
+    public Produto(){
+        super();
+    }
 
     public String getNome() {
         return nome;

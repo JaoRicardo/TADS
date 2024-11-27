@@ -1,49 +1,52 @@
 public  class Pedido{
 
-    public String cliente;
-    public String pruduto;
-    public String garcom;
-    public String mesa;
-    
-    public Pedido(String cliente, String pruduto, String garcom, String mesa) {
+    private Cliente cliente;
+    private Produto produto;
+    private Garcom garcom;
+    private int mesa;
+
+    public Pedido(Cliente cliente, Produto produto, Garcom garcom, int mesa) {
+        super();
         this.cliente = cliente;
-        this.pruduto = pruduto;
+        this.produto = produto;
         this.garcom = garcom;
         this.mesa = mesa;
     }
-
-    public String getCliente() {
+    public Pedido() {
+        super();
+    }
+    
+    public Cliente getCliente() {
         return cliente;
     }
 
-    public void setCliente(String cliente) {
+    public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
 
-    public String getPruduto() {
-        return pruduto;
+    public Produto getProduto() {
+        return produto;
     }
 
-    public void setPruduto(String pruduto) {
-        this.pruduto = pruduto;
+    public void setProduto(Produto produto) {
+        this.produto = produto;
     }
 
-    public String getGarcom() {
+    public Garcom getGarcom() {
         return garcom;
     }
 
-    public void setGarcom(String garcom) {
+    public void setGarcom(Garcom garcom) {
         this.garcom = garcom;
     }
 
-    public String getMesa() {
+    public int getMesa() {
         return mesa;
     }
 
-    public void setMesa(String mesa) {
+    public void setMesa(int mesa) {
         this.mesa = mesa;
     }
 
-
-
+    
 }
