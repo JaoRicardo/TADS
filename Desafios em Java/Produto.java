@@ -1,21 +1,19 @@
 public class Produto{
     public String nome;
-    public int quantidade;
+    public int codigo;
     public float preco;
-    public String fornecedor;
 
 
 
-    public Produto(String nome, int quantidade, float preco, String fornecedor){
+    public Produto(String nome, int codigo, float preco, String fornecedor){
         super();
         this.nome = nome;
-        this.quantidade = quantidade;
+        this.codigo = codigo;
         if(preco<0){
             System.out.println("Erro: preço invalido");
         }else{
             this.preco = preco;  
         }
-        this.fornecedor = fornecedor;
     }
 
     public String getNome() {
@@ -26,16 +24,12 @@ public class Produto{
         this.nome = nome;
     }
 
-    public int getQuantidade() {
-        return quantidade;
+    public int getcodigo() {
+        return codigo;
     }
 
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
-    }
-
-    public float getPreco() {
-        return preco;
+    public void setcodigo(int codigo) {
+        this.codigo = codigo;
     }
 
     public void setPreco(float preco) {
@@ -44,13 +38,5 @@ public class Produto{
         }else{
             this.preco = preco;  
         }
-    }
-
-    public String getFornecedor() {
-        return fornecedor;
-    }
-
-    public void setFornecedor(String fornecedor) {
-        this.fornecedor = fornecedor;
     }
 }
