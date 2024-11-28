@@ -5,7 +5,7 @@ public class Produto{
 
 
 
-    public Produto(String nome, int codigo, float preco, String fornecedor){
+    public Produto(String nome, int codigo, float preco){
         super();
         this.nome = nome;
         this.codigo = codigo;
