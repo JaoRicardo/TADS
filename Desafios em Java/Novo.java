@@ -1,7 +1,8 @@
 public class Novo extends Imovel {
-    float precoExtra;
+    private float precoExtra;
 
-    public Novo(float precoExtra) {
+    public Novo(float precoExtra, String endereco, float preco) {
+        super(endereco, preco);
         this.precoExtra = precoExtra;
     }
 

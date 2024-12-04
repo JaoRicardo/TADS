@@ -2,7 +2,8 @@ public class Imovel {
     private String endereco;
     private float preco;
 
-    public void Imovel(String endereco, float preco){
+    public Imovel(String endereco, float preco){
+        super();
         this.endereco = endereco;
         this.preco = preco;
     }
